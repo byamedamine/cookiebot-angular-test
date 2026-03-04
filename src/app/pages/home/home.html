@@ -1,0 +1,22 @@
+<div class="page">
+  <section class="hero">
+    <h1>Cookiebot Angular SPA Bug Test</h1>
+    <p>
+      This is an <strong>Angular Single-Page Application</strong> with Zone.js
+      to reproduce the JavaScript error when clicking "Change your consent"
+      on the Cookie Declaration page.
+    </p>
+  </section>
+
+  <section class="steps-card">
+    <h2>🐛 Bug Reproduction Steps</h2>
+    <ol>
+      <li>Open this site in <strong>Incognito / Private mode</strong>.</li>
+      <li>When the Cookiebot consent banner appears, click <strong>Save settings</strong>.</li>
+      <li>Click <a routerLink="/cookie-declaration">Cookie Declaration</a> in the nav — <strong>do NOT hard-refresh</strong>.</li>
+      <li>Open <strong>DevTools → Console</strong> (F12).</li>
+      <li>Click the <strong>"Change your consent"</strong> button at the bottom.</li>
+      <li>Observe the JS error in the console.</li>
+    </ol>
+  </section>
+</div>
